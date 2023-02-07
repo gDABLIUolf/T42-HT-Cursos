@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrasco HT</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <!--Uma div é para criar um espaço que ocupa 100% de uma linha-->
+        <div class="caixa">
+            <h1><img alt="espeto" src="./espeto.png">Churrasco HT<img alt="churrasqueira" src="./churrasco.png"></h1>
+            <div>
+                <input type="number" id="numeroCriancas" class="campo" placeholder="Número de crianças">
+                <input type="number" id="numeroAdultos" class="campo" placeholder="Número de adultos">
+            </div>
+
+            <div>
+                <label for="grama">Peso em Gramas</label>
+                <input type="radio" name="Peso" id="grama" class="radio">
+                <label for="kilograma">Peso em kg</label>
+                <input type="radio" name="Peso" id="kilograma" class="radio">
+            </div>
+            <div>
+                <button class="botao" onclick="calcular()">Calcular</button>
+            </div>
+            <div id="resultado">
+
+            </div>
+        </div>
+
+    </section>
+    <script src="churrasco.js"></script>
+</body>
+
+</html>

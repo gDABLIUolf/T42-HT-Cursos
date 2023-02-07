@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento HT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="perguntarValor()">
+    <h1>Formulario de Cadastro</h1>
+    <fieldset>
+        <legend>Carro</legend>
+        <label for="placa">Placa</label><br>
+        <input type="text" id="placa" name="placa"><br>
+        <label for="modelo">Modelo</label><br>
+        <input type="text" id="modelo" name="modelo"><br>
+        <label for="marca">Marca</label><br>
+        <input type="text" id="marca" name="marca"><br>
+        <label for="cor">Cor</label><br>
+        <input type="text" id="cor" name="cor"><br>
+
+        <label for="tipo">Tipo</label><br>
+        <select id="tipo">
+            <option value="">Selecione um tipo</option>
+            <option value="moto">Moto</option>
+            <option value="carro">Carro</option>
+            <option value="caminhao">Caminhão</option>
+        </select>
+
+        <button onclick="adicionarCarro()">Adicionar</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Cobrar Veículo</legend>
+        <input type="text" id="placaParaCobrar" placeholder="Placa para cobrança">
+        <button onclick="cobrarCarro()">Cobrar</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Carros Adicionados</legend>
+        <div id="listaCarros"></div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Configurações</legend>
+        <div id="botoes">
+
+        </div>
+
+
+    </fieldset>
+    <script src=" script.js"></script>
+</body>
+
+</html>

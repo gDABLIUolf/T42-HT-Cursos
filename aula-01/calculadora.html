@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #caixa {
+            background-color: rgb(91, 223, 91);
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        div {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="caixa">
+        <h1>Calculadora High Tech</h1>
+        <div>
+            <input type="number" placeholder="Número 1" id="numero-1">
+        </div>
+        <div>
+            <input type="number" placeholder="Número 2" id="numero-2">
+        </div>
+        <div>
+            <button onclick="somar()">Somar</button>
+        </div>
+        <div id="resultado">
+
+        </div>
+    </div>
+
+
+    <script>
+
+        function somar() {
+            var numero1 = document.getElementById("numero-1").value
+            var numero2 = document.getElementById("numero-2").value
+            var Total = parseInt(numero1) + parseInt(numero2)
+            document.getElementById("resultado").innerText = 'A soma é: ' + Total
+        }
+
+    </script>
+</body>
+
+</html>
